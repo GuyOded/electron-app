@@ -4,6 +4,7 @@ function createWindow() {
     // Create the browser window.
     let win = new BrowserWindow({
         fullscreen: true,
+        frame: false,
         webPreferences: {
             nodeIntegration: true
         }
