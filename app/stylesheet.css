@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-family: Roboto, sans-serif;
+    background-color: #000;
+    background-image: radial-gradient(circle farthest-corner at center, #1c262b 0, #000 100%);
+  }
+  
+  .zirkaAndryWorks {
+    width: 70vh;
+    height: 70vh;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  
+  .button_witcher {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #000;
+    border: none;
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .button_witcher:hover, .button_witcher:focus {
+    outline: none;
+    transition: .12s ease-in;
+    box-shadow: 0 0 15px 4px rgba(235, 9, 9, 0.9);
+  }
+  
+  .button_witcher svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .color_path {
+    fill: #fff;
+  }
+  
+  .color_eye {
+    fill: #D80505;
+  }
+  
+  .btn_rune {
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: #000;
+    border: 0.5vh solid #fff;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 4;
+    --rune-color1: rgba(229, 17, 40, 0.9);
+    --rune-color2: rgba(235, 211, 53, 0.9);
+    --rune-color3: rgba(54, 206, 35, 0.9);
+    --rune-color4: rgba(138, 66, 139, 0.9);
+    --rune-color5: rgba(0, 162, 206, 0.9);
+  }
+  
+  .btn_rune svg {
+    fill: none;
+    stroke-width: 3px;
+    stroke-miterlimit: 10;
+  }
+  
+  .btn_rune:focus {
+    outline: none;
+  }
+  
+  .btn_rune.btn_rune__active {
+    transition: 1s all .15s;
+    opacity: 1;
+  }
+  
+  .btn_rune1 {
+    top: 102%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    stroke-dasharray: 65.194;
+    stroke-dashoffset: 65.194;
+  }
+  
+  .btn_rune1.btn_rune__active {
+    border-color: rgba(229, 17, 40, 0.9);
+    box-shadow: 0 0 15px 4px rgba(229, 17, 40, 0.9);
+    -webkit-animation: animationRune1 1s linear 1s;
+            animation: animationRune1 1s linear 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  .btn_rune2 {
+    top: 94%;
+    left: calc(50% - 22%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    stroke-dasharray: 72.385;
+    stroke-dashoffset: 72.385;
+  }
+  
+  .btn_rune2.btn_rune__active {
+    box-shadow: 0 0 15px 4px rgba(235, 211, 53, 0.9);
+    border-color: rgba(235, 211, 53, 0.9);
+    -webkit-animation: animationRune2 1s linear 2.5s;
+            animation: animationRune2 1s linear 2.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  .btn_rune3 {
+    top: 94%;
+    left: calc(50% + 22%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    stroke-dasharray: 61.161;
+    stroke-dashoffset: 61.161;
+  }
+  
+  .btn_rune3.btn_rune__active {
+    box-shadow: 0 0 15px 4px rgba(54, 206, 35, 0.9);
+    border-color: rgba(54, 206, 35, 0.9);
+    -webkit-animation: animationRune3 1s linear 2.5s;
+            animation: animationRune3 1s linear 2.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  .btn_rune4 {
+    top: 80%;
+    left: calc(50% - 40%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    stroke-dasharray: 92.874;
+    stroke-dashoffset: 92.874;
+  }
+  
+  .btn_rune4.btn_rune__active {
+    box-shadow: 0 0 15px 4px rgba(138, 66, 139, 0.9);
+    border-color: rgba(138, 66, 139, 0.9);
+    -webkit-animation: animationRune4 1s linear 3.5s;
+            animation: animationRune4 1s linear 3.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  .btn_rune5 {
+    top: 80%;
+    left: calc(50% + 40%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    stroke-dasharray: 64.939;
+    stroke-dashoffset: 64.939;
+  }
+  
+  .btn_rune5.btn_rune__active {
+    box-shadow: 0 0 15px 4px rgba(0, 162, 206, 0.9);
+    border-color: rgba(0, 162, 206, 0.9);
+    -webkit-animation: animationRune5 1s linear 3.5s;
+            animation: animationRune5 1s linear 3.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  @-webkit-keyframes animationRune1 {
+    0% {
+      stroke-dashoffset: 65.194;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes animationRune1 {
+    0% {
+      stroke-dashoffset: 65.194;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @-webkit-keyframes animationRune2 {
+    0% {
+      stroke-dashoffset: 72.385;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes animationRune2 {
+    0% {
+      stroke-dashoffset: 72.385;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @-webkit-keyframes animationRune3 {
+    0% {
+      stroke-dashoffset: 61.161;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes animationRune3 {
+    0% {
+      stroke-dashoffset: 61.161;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @-webkit-keyframes animationRune4 {
+    0% {
+      stroke-dashoffset: 92.874;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes animationRune4 {
+    0% {
+      stroke-dashoffset: 92.874;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @-webkit-keyframes animationRune5 {
+    0% {
+      stroke-dashoffset: 64.939;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes animationRune5 {
+    0% {
+      stroke-dashoffset: 64.939;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .logo-witcher {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 20vh;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  
+  .aboutMe a {
+    display: block;
+    width: 30%;
+    position: fixed;
+    bottom: 0.1%;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
