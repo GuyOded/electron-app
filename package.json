@@ -4,11 +4,27 @@
   "description": "Electron web app",
   "main": "main.js",
   "scripts": {
-    "start": "electron"
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "trying-electron",
+    "linux": {
+      "category": "Entertainment",
+      "target": "AppImage"
+    },
+    "win": {
+      "target": "7z"
+    }
   },
   "keywords": [
     "Electron"
   ],
   "author": "guy",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.1.1",
+    "electron-builder": "^22.4.1"
+  }
 }
