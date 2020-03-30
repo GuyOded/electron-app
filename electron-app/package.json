@@ -2,12 +2,11 @@
   "name": "trying-electron",
   "version": "1.0.0",
   "description": "Electron web app",
-  "main": "main.js",
+  "main": "out/electron/main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "dist-win": ""
+    "dist": "electron-builder"
   },
   "build": {
     "appId": "trying-electron",
@@ -28,7 +27,15 @@
   "author": "guy",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^3.4.2",
     "electron": "^8.1.1",
-    "electron-builder": "^22.4.1"
+    "electron-builder": "^22.4.1",
+    "html-webpack-plugin": "^4.0.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-glob": "^2.0.2"
   }
 }
