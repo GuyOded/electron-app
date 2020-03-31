@@ -10,8 +10,9 @@ const mainProcessConfig = {
     main: "./main/main.ts",
   },
   output: {
-    path: path.resolve(__dirname, "out/electron"),
-    filename: "main.js"
+    path: path.resolve(__dirname, "out/main"),
+    filename: "main.js",
+    publicPath: path.resolve(__dirname, "out/main")
   },
   target: "electron-main",
   module: {

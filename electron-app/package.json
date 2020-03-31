@@ -2,9 +2,9 @@
   "name": "trying-electron",
   "version": "1.0.0",
   "description": "Electron web app",
-  "main": "out/electron/main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "npm run build && electron ./out/main/main.js",
+    "build": "webpack",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },

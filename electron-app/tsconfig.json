@@ -5,6 +5,7 @@
         "sourceMap": true,
         "target": "ES5",
         "moduleResolution": "node",
+        "outDir": "out",
         "noImplicitAny": true,
         "typeRoots": [
             "node_modules/@types"
@@ -12,7 +13,7 @@
     },
     "include": [
         "main/main.ts",
-        "components/"
+        "components/*.ts"
     ],
     "exclude": [
         "node_modules"
