@@ -10,9 +10,7 @@ function createWindow() {
         }
     })
 
-    // and load the index.html of the app.
     win.loadFile("../components/index.html")
-    win.webContents.openDevTools()
 }
 
 app.whenReady().then(createWindow)

@@ -2,9 +2,11 @@
   "name": "trying-electron",
   "version": "1.0.0",
   "description": "Electron web app",
+  "main": "out/main/main.js",
   "scripts": {
     "start": "npm run build && electron ./out/main/main.js",
     "build": "webpack",
+    "clean": "rm -r out/",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
@@ -13,6 +15,12 @@
     "directories": {
       "output": "../dist"
     },
+    "extraResources": [
+      {
+        "from": "out/components",
+        "to": "components"
+      }
+    ],
     "linux": {
       "category": "Entertainment",
       "target": "AppImage"
