@@ -1,0 +1,49 @@
+{
+  "name": "trying-electron",
+  "version": "1.0.1",
+  "description": "Electron web app",
+  "main": "out/main/main.js",
+  "scripts": {
+    "start": "npm run build && electron ./out/main/main.js",
+    "build": "webpack",
+    "clean": "rm -r out/",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "trying-electron",
+    "directories": {
+      "output": "../dist"
+    },
+    "extraResources": [
+      {
+        "from": "out/components",
+        "to": "components"
+      }
+    ],
+    "linux": {
+      "category": "Entertainment",
+      "target": "AppImage"
+    },
+    "win": {
+      "target": "7z"
+    }
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "guy",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "electron": "^8.1.1",
+    "electron-builder": "^22.4.1",
+    "html-webpack-plugin": "^4.0.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-glob": "^2.0.2"
+  }
+}
